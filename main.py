@@ -52,9 +52,21 @@ import numpy
 # print("randint:",values)
 # print("Random float number  ", random.uniform(0,10))
 
-a = float(input("Enter a:"))
-b = float(input("Enter b:"))
-if(a < b):
-    print("a < b , {}".format(a))
-else:
-    print("a > b , {}".format(b))
+# a = float(input("Enter a:"))
+# b = float(input("Enter b:"))
+# if(a < b):
+#     print("a < b , {}".format(a))
+# else:
+#     print("a > b , {}".format(b))
+
+
+def mySign(num):
+    if(num<0):
+        print("-1")
+    elif(num>0):
+        print("1")
+    elif(num==0):
+        print("0")
+
+num = float(input("enter num:"))
+mySign(num)
