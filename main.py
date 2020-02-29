@@ -1,3 +1,4 @@
+import math
 #name = input("Enter Name:")
 #print("hello, {}!".format(name))
 
@@ -8,6 +9,11 @@
 #print("sum of a+b+c=", a+b+c)
 
 
-curnum = int(input("Enter number"))
-print("The next number for the number {} is {}". format(curnum, curnum-1))
-print("The previous number for the number {} is {}". format(curnum, curnum+1))
+# curnum = int(input("Enter number"))
+# print("The next number for the number {} is {}". format(curnum, curnum-1))
+# print("The previous number for the number {} is {}". format(curnum, curnum+1))
+
+
+s=float(input("Enter area of square"))
+side = float(math.sqrt(s))
+print("Side of rectangle is", side)
