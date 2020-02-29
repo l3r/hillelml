@@ -18,11 +18,17 @@ import math
 # side = float(math.sqrt(s))
 # print("Side of rectangle is", side)
 
-a = float(input("Enter a:"))
-b = float(input("Enter b:"))
-c = float(input("Enter a:"))
-p = a + b + c
-p = p/2
-print("p=",p)
-s = math.sqrt(p*(p-a)*(p-b)*(p-c))
-print("s={}m2".format(s))
+# a = float(input("Enter a:"))
+# b = float(input("Enter b:"))
+# c = float(input("Enter a:"))
+# p = a + b + c
+# p = p/2
+# print("p=",p)
+# s = math.sqrt(p*(p-a)*(p-b)*(p-c))
+# print("s={}m2".format(s))
+
+kredsum = float(input("Enter sum of loan:"))
+percent = float(input("Enter percents:"))
+totalsum = kredsum+kredsum/100*percent
+
+print("Total sum: {}, Overpay: {}".format(totalsum, totalsum-kredsum ))
