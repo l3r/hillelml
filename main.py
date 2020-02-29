@@ -33,13 +33,13 @@ import math
 #
 # print("Total sum: {}, Overpay: {}".format(totalsum, totalsum-kredsum ))
 
-a = int(input("enter a:"))
-b = int(input("enter b:"))
-if str(a).isdigit() and str(b).isdigit():
-    print("a + b = ", a + b)
-    print("a - b = ", a - b)
-    print("a * b = ", a * b)
-    print("a / b = ", a / b)
-else:
-    print("a or b is not number")
+# a = int(input("enter a:"))
+# b = int(input("enter b:"))
+# if str(a).isdigit() and str(b).isdigit():
+#     print("a + b = ", a + b)
+#     print("a - b = ", a - b)
+#     print("a * b = ", a * b)
+#     print("a / b = ", a / b)
+# else:
+#     print("a or b is not number")
 
