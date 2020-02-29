@@ -46,9 +46,15 @@ import numpy
 #     print("a or b is not number")
 
 
-from numpy import random
+# from numpy import random
+#
+# values = random.randint(0, 10)
+# print("randint:",values)
+# print("Random float number  ", random.uniform(0,10))
 
-values = random.randint(0, 10)
-print("randint:",values)
-print("Random float number  ", random.uniform(0,10))
-
+a = float(input("Enter a:"))
+b = float(input("Enter b:"))
+if(a < b):
+    print("a < b , {}".format(a))
+else:
+    print("a > b , {}".format(b))
