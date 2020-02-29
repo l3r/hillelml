@@ -60,13 +60,33 @@ import numpy
 #     print("a > b , {}".format(b))
 
 
-def mySign(num):
-    if(num<0):
-        print("-1")
-    elif(num>0):
-        print("1")
-    elif(num==0):
-        print("0")
+# def mySign(num):
+#     if(num<0):
+#         print("-1")
+#     elif(num>0):
+#         print("1")
+#     elif(num==0):
+#         print("0")
+#
+# num = float(input("enter num:"))
+# mySign(num)
 
-num = float(input("enter num:"))
-mySign(num)
+
+
+
+import operator
+
+operators={
+    "+": operator.add,
+    "-": operator.sub,
+    "*": operator.mul,
+    "/": operator.truediv}
+
+a = input("enter a:")
+b = input("enter b:")
+op = input("enter operator:")
+
+result = operators[op](int(a),int(b))
+print("{}{}{}={}".format(a,op,b,result))
+
+
