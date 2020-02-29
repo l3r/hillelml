@@ -27,8 +27,19 @@ import math
 # s = math.sqrt(p*(p-a)*(p-b)*(p-c))
 # print("s={}m2".format(s))
 
-kredsum = float(input("Enter sum of loan:"))
-percent = float(input("Enter percents:"))
-totalsum = kredsum+kredsum/100*percent
+# kredsum = float(input("Enter sum of loan:"))
+# percent = float(input("Enter percents:"))
+# totalsum = kredsum+kredsum/100*percent
+#
+# print("Total sum: {}, Overpay: {}".format(totalsum, totalsum-kredsum ))
 
-print("Total sum: {}, Overpay: {}".format(totalsum, totalsum-kredsum ))
+a = int(input("enter a:"))
+b = int(input("enter b:"))
+if str(a).isdigit() and str(b).isdigit():
+    print("a + b = ", a + b)
+    print("a - b = ", a - b)
+    print("a * b = ", a * b)
+    print("a / b = ", a / b)
+else:
+    print("a or b is not number")
+
