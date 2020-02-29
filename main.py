@@ -91,19 +91,36 @@ import numpy
 
 
 # print("Enter  a, b ,c")
-# a = float(input("a = "))
-# b = float(input("b = "))
-# c = float(input("c = "))
-#
-# discr = b ** 2 - 4 * a * c
-# print("discr D = %.2f" % discr)
-#
-# if discr > 0:
-#     x1 = (-b + math.sqrt(discr)) / (2 * a)
-#     x2 = (-b - math.sqrt(discr)) / (2 * a)
-#     print("x1 ={} \nx2 = {}" .format(x1, x2))
-# elif discr == 0:
-#     x = -b / (2 * a)
-#     print("x = {}".format(x))
-# else:
-#     print("no roots")
+# # a = float(input("a = "))
+# # b = float(input("b = "))
+# # c = float(input("c = "))
+# #
+# # discr = b ** 2 - 4 * a * c
+# # print("discr D = %.2f" % discr)
+# #
+# # if discr > 0:
+# #     x1 = (-b + math.sqrt(discr)) / (2 * a)
+# #     x2 = (-b - math.sqrt(discr)) / (2 * a)
+# #     print("x1 ={} \nx2 = {}" .format(x1, x2))
+# # elif discr == 0:
+# #     x = -b / (2 * a)
+# #     print("x = {}".format(x))
+# # else:
+# #     print("no roots")
+
+def isGlasn(letr):
+    for l in glasn:
+        if (l == letr):
+            return True
+
+
+glasn= ["а","о","у"]
+isglasnF = False
+letr = input("input letr:")
+isglasnF=isGlasn(letr)
+if(isglasnF):
+    print("Глассная")
+else:
+    print("Не глассная")
+
+
