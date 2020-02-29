@@ -1,4 +1,6 @@
 import math
+import numpy
+
 #name = input("Enter Name:")
 #print("hello, {}!".format(name))
 
@@ -42,4 +44,11 @@ import math
 #     print("a / b = ", a / b)
 # else:
 #     print("a or b is not number")
+
+
+from numpy import random
+
+values = random.randint(0, 10)
+print("randint:",values)
+print("Random float number  ", random.uniform(0,10))
 
